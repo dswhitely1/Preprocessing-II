@@ -195,19 +195,6 @@ header a {
 header a:hover {
   text-decoration: underline;
 }
-.cta {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-flow: column nowrap;
-  border-bottom: 2px dashed #C0C0C0;
-}
-.cta img {
-  margin-bottom: 22px;
-}
-.cta p {
-  margin-bottom: 10px;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -218,6 +205,19 @@ header a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-flow: column nowrap;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .cta img {
+  margin-bottom: 22px;
+}
+.home .cta p {
+  margin-bottom: 10px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -264,4 +264,15 @@ header a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: #17A2B8;
+  color: #212529;
+  font-size: 1.7rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
 }
