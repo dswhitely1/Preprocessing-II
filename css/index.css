@@ -174,11 +174,28 @@ header {
   align-items: center;
   flex-flow: row nowrap;
   padding: 24px 0;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   margin: 0 -100px;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 0;
+    width: 100%;
+    padding: 18px 0;
+  }
 }
 header h1 {
   margin: 0 100px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 }
 header nav {
   display: flex;
@@ -187,6 +204,12 @@ header nav {
   flex-flow: row nowrap;
   width: 35%;
   margin: 0 100px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    margin: 0;
+  }
 }
 header a {
   font-size: 1.6rem;
@@ -198,7 +221,7 @@ header a:hover {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -211,7 +234,7 @@ header a:hover {
   justify-content: space-around;
   align-items: stretch;
   flex-flow: column nowrap;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .cta img {
   margin-bottom: 22px;
@@ -238,7 +261,7 @@ header a:hover {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -257,7 +280,7 @@ header a:hover {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -269,7 +292,7 @@ header a:hover {
   width: 200px;
   height: 45px;
   border-radius: 15px;
-  background-color: #17A2B8;
+  background-color: #17a2b8;
   color: #212529;
   font-size: 1.7rem;
   border: none;
