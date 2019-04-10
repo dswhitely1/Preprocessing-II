@@ -1,13 +1,35 @@
 // Navigation Styles here
 header {
 	.flex(space-between, center);
-
+	padding: 24px 0;
+	border-bottom: 2px dashed @navigation-border;
+	margin: 0 -100px;
+	h1 {
+		margin: 0 100px;
+	}
 	nav {
-		.flex(space-around);
+		.flex(space-evenly);
+		width: 35%;
+		margin: 0 100px;
 	}
 	a {
 		font-size: 1.6rem;
 		text-decoration: none;
-		padding-right: 10%;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.cta {
+	.flex(space-around, stretch, column, nowrap);
+	border-bottom: 2px dashed @navigation-border;
+
+	img {
+		margin-bottom: 22px;
+	}
+
+	p {
+		margin-bottom: 10px;
 	}
 }
