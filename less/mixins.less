@@ -1,1 +1,8 @@
 // Mixins in here
+
+.flex(@j: flex-start; @a: stretch; @d: row; @w: nowrap;) {
+	display: flex;
+	justify-content: @j;
+	align-items: @a;
+	flex-flow: @d @w;
+}
