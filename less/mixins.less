@@ -1,26 +1,66 @@
 // Mixins in here
 
 .flex(@j: flex-start; @a: stretch; @d: row; @w: nowrap;) {
-	display: flex;
-	justify-content: @j;
-	align-items: @a;
-	flex-flow: @d @w;
+	.flex-display;
+	.justify-content(@j);
+	.align-items(@a);
+	.flex-direction(@d);
+	.flex-wrap(@w);
 }
 
 .flex-params(@j: flex-start; @a: stretch; @d: row; @w: nowrap;) {
-	justify-content: @j;
-	align-items: @a;
-	flex-flow: @d @w;
+	.justify-content(@j);
+	.align-items(@a);
+	.flex-direction(@d);
+	.flex-wrap(@w);
+}
+
+.flex-display(@display: flex) {
+	display: ~"-webkit-@{display}";
+	display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+	display: ~"-ms-@{display}"; // IE11
+	display: @display;
+}
+.justify-content(@justify: flex-start) {
+	-webkit-justify-content: @justify;
+	-ms-justify-content: @justify;
+	justify-content: @justify;
+}
+.align-items(@align: stretch) {
+	-webkit-align-items: @align;
+	-ms-align-items: @align;
+	align-items: @align;
+}
+.flex-wrap(@wrap: nowrap) {
+	-webkit-flex-wrap: @wrap;
+	-ms-flex-wrap: @wrap;
+	flex-wrap: @wrap;
+}
+.flex-direction(@direction: row) {
+	-webkit-flex-direction: @direction;
+	-ms-flex-direction: @direction;
+	flex-direction: @direction;
 }
 
 .button(@w: 10px; @h: 10px; @r:5px; @bg: white; @c: black; @fs: 1.6rem;) {
 	width: @w;
 	height: @h;
-	border-radius: @r;
+	.border-radius(@r);
 	background-color: @bg;
 	color: @c;
 	font-size: @fs;
 	border: none;
 	font-weight: 700;
 	cursor: pointer;
+}
+.border-radius(@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.box-sizing(@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing: @type;
+	box-sizing: @type;
 }
