@@ -9,7 +9,7 @@
 
 	.cta {
 		.flex(space-around, stretch, column, wrap);
-		border-bottom: 2px dashed @navigation-border;
+		border-bottom: @border;
 
 		@media @phone {
 			width: 103%;
@@ -33,22 +33,18 @@
 			.flex-params(center, stretch, column, nowrap);
 		}
 		.text-content {
-			width: 48%;
-			padding-right: 1%;
+			.content-section-spacing;
 
 			@media @phone {
-				width: 103%;
-				padding-right: 0;
+				.content-section-spacing(103%, 0);
 			}
 		}
 
 		.img-content {
-			width: 48%;
-			padding-left: 1%;
+			.content-section-spacing;
 
 			@media @phone {
-				width: 103%;
-				padding-left: 0;
+				.content-section-spacing(103%, 0);
 			}
 
 			img {
@@ -60,7 +56,7 @@
 
 	.inverse-content {
 		padding-bottom: 30px;
-		border-bottom: 2px dashed @navigation-border;
+		border-bottom: @border;
 
 		@media @phone {
 			.flex-params(center, stretch, column-reverse, nowrap);
@@ -93,7 +89,7 @@
 
 	.content-pick {
 		padding-top: 30px;
-		border-top: 2px dashed @navigation-border;
+		border-top: @border;
 		.flex(space-between, stretch, row, nowrap);
 
 		@media (max-width: 690px) {
@@ -110,7 +106,7 @@
 		}
 		.btn {
 			.button(83%, 45px, 15px, @button-bg, @font-color, 1.7rem);
-			.animation(pulse);
+
 			@media (max-width: 690px) {
 				width: 104%;
 			}
@@ -118,12 +114,9 @@
 	}
 
 	.content-form {
-		border-top: 2px dashed @navigation-border;
-		h4 {
-			text-align: center;
-		}
-		// background-color: #f2f2f2;
+		border-top: @border;
 		padding: 20px;
+
 		form {
 			margin-bottom: 10px;
 			@media (max-width: 690px) {
@@ -131,6 +124,7 @@
 				margin: 0 auto;
 			}
 		}
+
 		input[type=text],
 		input[type=tel],
 		input[type=email],
@@ -148,34 +142,29 @@
 			display: inline-block;
 			font-size: 1.6rem;
 		}
+
 		input[type=submit] {
 			.button(75%, 45px, 15px, @button-bg, @font-color, 1.7rem);
-			float: right;
-			margin-top: 6px;
+			.form-align(75%, right, 6px);
+
 			@media (max-width: 690px) {
 				width: 100%;
 			}
 		}
 
 		.left-side {
-			float: left;
-			width: 25%;
-			margin-top: 6px;
+			.form-align(25%, left, 6px);
 
 			@media (max-width: 690px) {
-				width: 100%;
-				margin-top: 0;
+				.form-align;
 			}
 		}
 
 		.right-side {
-			float: left;
-			width: 75%;
-			margin-top: 6px;
+			.form-align(75%, left, 6px);
 
 			@media (max-width: 690px) {
-				width: 100%;
-				margin-top: 0;
+				.form-align;
 			}
 		}
 

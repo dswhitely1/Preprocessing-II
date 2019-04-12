@@ -346,22 +346,22 @@ a:hover {
 }
 .home .content-section .text-content {
   width: 48%;
-  padding-right: 1%;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 103%;
-    padding-right: 0;
+    padding: 0;
   }
 }
 .home .content-section .img-content {
   width: 48%;
-  padding-left: 1%;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 103%;
-    padding-left: 0;
+    padding: 0;
   }
 }
 .home .content-section .img-content img {
@@ -468,10 +468,6 @@ a:hover {
   border: none;
   font-weight: 700;
   cursor: pointer;
-  -webkit-animation: pulse 3000ms 0 ease;
-  -moz-animation: pulse 3000ms 0 ease;
-  -ms-animation: pulse 3000ms 0 ease;
-  animation: pulse 3000ms 0 ease;
 }
 @media (max-width: 690px) {
   .home .content-pick .btn {
@@ -481,9 +477,6 @@ a:hover {
 .home .content-form {
   border-top: 2px dashed #c0c0c0;
   padding: 20px;
-}
-.home .content-form h4 {
-  text-align: center;
 }
 .home .content-form form {
   margin-bottom: 10px;
@@ -513,7 +506,6 @@ a:hover {
   font-size: 1.6rem;
 }
 .home .content-form input[type=submit] {
-  width: 75%;
   height: 45px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -525,6 +517,7 @@ a:hover {
   font-weight: 700;
   cursor: pointer;
   float: right;
+  width: 75%;
   margin-top: 6px;
 }
 @media (max-width: 690px) {
@@ -539,6 +532,7 @@ a:hover {
 }
 @media (max-width: 690px) {
   .home .content-form .left-side {
+    float: left;
     width: 100%;
     margin-top: 0;
   }
@@ -550,6 +544,7 @@ a:hover {
 }
 @media (max-width: 690px) {
   .home .content-form .right-side {
+    float: left;
     width: 100%;
     margin-top: 0;
   }

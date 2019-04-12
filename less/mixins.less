@@ -65,22 +65,13 @@
 	box-sizing: @type;
 }
 
-.animate-btn(@f, @t) {
-	@keyframes fadeAndMove {
-		from {
-			opacity: 0;
-			transform: translateX(@f);
-		}
-		to {
-			opacity: 0;
-			transform: translateX(@t);
-		}
-	}
+.content-section-spacing(@w: 48%, @p: 1%) {
+	width: @w;
+	padding: @p;
 }
 
-.animation(@name, @duration: 3000ms, @delay: 0, @ease: ease) {
-	-webkit-animation: @name @duration @delay @ease;
-	-moz-animation: @name @duration @delay @ease;
-	-ms-animation: @name @duration @delay @ease;
-	animation: @name @duration @delay @ease;
+.form-align(@w: 100%, @f:left, @m: 0) {
+	float: @f;
+	width: @w;
+	margin-top: @m;
 }
