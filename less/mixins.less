@@ -64,3 +64,23 @@
 	-moz-box-sizing: @type;
 	box-sizing: @type;
 }
+
+.animate-btn(@f, @t) {
+	@keyframes fadeAndMove {
+		from {
+			opacity: 0;
+			transform: translateX(@f);
+		}
+		to {
+			opacity: 0;
+			transform: translateX(@t);
+		}
+	}
+}
+
+.animation(@name, @duration: 3000ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation: @name @duration @delay @ease;
+	-ms-animation: @name @duration @delay @ease;
+	animation: @name @duration @delay @ease;
+}

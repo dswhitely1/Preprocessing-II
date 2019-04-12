@@ -1,119 +1,119 @@
 .home {
-    @media @tablet {
-        padding: 0 2%;
-    }
+	@media @tablet {
+		padding: 0 2%;
+	}
 
-    @media @phone {
-        padding: 0 5%;
-    }
+	@media @phone {
+		padding: 0 5%;
+	}
 
-    .cta {
-        .flex(space-around, stretch, column, wrap);
-        border-bottom: 2px dashed @navigation-border;
+	.cta {
+		.flex(space-around, stretch, column, wrap);
+		border-bottom: 2px dashed @navigation-border;
 
-        @media @phone {
-            width: 103%;
-        }
+		@media @phone {
+			width: 103%;
+		}
 
-        img {
-            margin-bottom: 22px;
-            width: 100%;
-            height: auto;
-        }
+		img {
+			margin-bottom: 22px;
+			width: 100%;
+			height: auto;
+		}
 
-        p {
-            margin-bottom: 10px;
-        }
-    }
-    .content-section {
-        margin: 30px 0;
-        .flex(space-between, stretch, row, wrap);
+		p {
+			margin-bottom: 10px;
+		}
+	}
+	.content-section {
+		margin: 30px 0;
+		.flex(space-between, stretch, row, wrap);
 
-        @media @phone {
-            .flex-params(center, stretch, column, nowrap);
-        }
-        .text-content {
-            width: 48%;
-            padding-right: 1%;
+		@media @phone {
+			.flex-params(center, stretch, column, nowrap);
+		}
+		.text-content {
+			width: 48%;
+			padding-right: 1%;
 
-            @media @phone {
-                width: 103%;
-                padding-right: 0;
-            }
-        }
+			@media @phone {
+				width: 103%;
+				padding-right: 0;
+			}
+		}
 
-        .img-content {
-            width: 48%;
-            padding-left: 1%;
+		.img-content {
+			width: 48%;
+			padding-left: 1%;
 
-            @media @phone {
-                width: 103%;
-                padding-left: 0;
-            }
+			@media @phone {
+				width: 103%;
+				padding-left: 0;
+			}
 
-            img {
-                width: 100%;
-                .border-radius(10px);
-            }
-        }
-    }
+			img {
+				width: 100%;
+				.border-radius(10px);
+			}
+		}
+	}
 
-    .inverse-content {
-        padding-bottom: 30px;
-        border-bottom: 2px dashed @navigation-border;
+	.inverse-content {
+		padding-bottom: 30px;
+		border-bottom: 2px dashed @navigation-border;
 
-        @media @phone {
-            .flex-params(center, stretch, column-reverse, nowrap);
-        }
+		@media @phone {
+			.flex-params(center, stretch, column-reverse, nowrap);
+		}
 
-        .text-content {
-            padding-left: 1%;
-            padding-right: 0;
-        }
+		.text-content {
+			padding-left: 1%;
+			padding-right: 0;
+		}
 
-        .img-content {
-            padding-right: 1%;
-            padding-left: 0;
-        }
-    }
+		.img-content {
+			padding-right: 1%;
+			padding-left: 0;
+		}
+	}
 
-    .content-destination {
-        width: 75%;
-        margin: 0 auto 30px;
+	.content-destination {
+		width: 75%;
+		margin: 0 auto 30px;
 
-        @media @phone {
-            width: 103%;
-        }
+		@media @phone {
+			width: 103%;
+		}
 
-        img {
-            border-radius: 10px;
-            width: 100%;
-        }
-    }
+		img {
+			border-radius: 10px;
+			width: 100%;
+		}
+	}
 
-    .content-pick {
-        padding-top: 30px;
-        border-top: 2px dashed @navigation-border;
-        .flex(space-between, stretch, row, nowrap);
+	.content-pick {
+		padding-top: 30px;
+		border-top: 2px dashed @navigation-border;
+		.flex(space-between, stretch, row, nowrap);
 
-        @media @phone {
-            .flex-params(center, center, column, nowrap);
-        }
+		@media (max-width: 690px) {
+			.flex-params(center, center, column, nowrap);
+		}
 
-        .destination {
-            width: 30%;
-            margin-bottom: 30px;
+		.destination {
+			width: 30%;
+			margin-bottom: 30px;
 
-            @media @phone {
-                width: 79%;
-            }
-        }
-        .btn {
-            .button(83%, 45px, 15px, @button-bg, @font-color, 1.7rem);
-
-            @media @phone {
-                width: 104%;
-            }
-        }
-    }
+			@media (max-width: 690px) {
+				width: 79%;
+			}
+		}
+		.btn {
+			.button(83%, 45px, 15px, @button-bg, @font-color, 1.7rem);
+			.animation(pulse);
+			@media (max-width: 690px) {
+				width: 104%;
+			}
+		}
+	}
 } // home

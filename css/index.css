@@ -248,6 +248,12 @@ a {
 @media (max-width: 800px) {
   a {
     padding: 0 6.7%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.4rem;
   }
 }
 a:hover {
@@ -428,7 +434,7 @@ a:hover {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 690px) {
   .home .content-pick {
     -webkit-justify-content: center;
     -ms-justify-content: center;
@@ -448,7 +454,7 @@ a:hover {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 690px) {
   .home .content-pick .destination {
     width: 79%;
   }
@@ -465,8 +471,12 @@ a:hover {
   border: none;
   font-weight: 700;
   cursor: pointer;
+  -webkit-animation: pulse 3000ms 0 ease;
+  -moz-animation: pulse 3000ms 0 ease;
+  -ms-animation: pulse 3000ms 0 ease;
+  animation: pulse 3000ms 0 ease;
 }
-@media (max-width: 500px) {
+@media (max-width: 690px) {
   .home .content-pick .btn {
     width: 104%;
   }
