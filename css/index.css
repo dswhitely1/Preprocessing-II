@@ -469,6 +469,12 @@ a:hover {
   font-weight: 700;
   cursor: pointer;
 }
+.home .content-pick .btn:hover {
+  animation-name: btn-animate;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
 @media (max-width: 690px) {
   .home .content-pick .btn {
     width: 104%;
@@ -520,6 +526,12 @@ a:hover {
   width: 75%;
   margin-top: 6px;
 }
+.home .content-form input[type=submit]:hover {
+  animation-name: btn-animate;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
 @media (max-width: 690px) {
   .home .content-form input[type=submit] {
     width: 100%;
@@ -553,4 +565,18 @@ a:hover {
   content: "";
   display: table;
   clear: both;
+}
+@keyframes btn-animate {
+  0% {
+    background-color: #17a2b8;
+    color: #212529;
+  }
+  50% {
+    background-color: #b82d17;
+    color: white;
+  }
+  100% {
+    background-color: #17a2b8;
+    color: #212529;
+  }
 }

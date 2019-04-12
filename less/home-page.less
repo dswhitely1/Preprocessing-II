@@ -107,6 +107,10 @@
 		.btn {
 			.button(83%, 45px, 15px, @button-bg, @font-color, 1.7rem);
 
+			&:hover {
+				.animate(3s, forwards);
+			}
+
 			@media (max-width: 690px) {
 				width: 104%;
 			}
@@ -147,6 +151,10 @@
 			.button(75%, 45px, 15px, @button-bg, @font-color, 1.7rem);
 			.form-align(75%, right, 6px);
 
+			&:hover {
+				.animate(3s, forwards);
+			}
+
 			@media (max-width: 690px) {
 				width: 100%;
 			}
@@ -175,3 +183,19 @@
 		}
 	}
 } // home
+
+@keyframes btn-animate {
+	0% {
+		background-color: @ani-base;
+		color: @font-color;
+	}
+
+	50% {
+		background-color: @ani-base-100;
+		color: white;
+	}
+	100% {
+		background-color: @ani-base;
+		color: @font-color;
+	}
+}
