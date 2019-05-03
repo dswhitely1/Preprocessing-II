@@ -1,1 +1,41 @@
 // Navigation Styles here
+header {
+	.flex(space-between, center);
+	padding: 14px 0 24px;
+	border-bottom: @border;
+
+	@media @phone {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		padding: 9px 0 0 3%;
+	}
+
+	h1 {
+		@media @phone {
+			font-size: 3rem;
+		}
+	}
+}
+nav {
+	.flex(space-evenly);
+	width: 44%;
+
+	@media @phone {
+		width: 100%;
+		.flex-params(center);
+		padding: 16px 0 7px;
+	}
+}
+a {
+	font-size: 1.6rem;
+
+	@media @phone {
+		padding: 0 6.7%;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
